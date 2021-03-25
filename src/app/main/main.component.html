@@ -1,0 +1,9 @@
+<app-categories></app-categories>
+<div class="container">
+  <div class="row" style="margin-bottom: 24px">
+    <app-advert *ngFor="let item of items; let i = index" class="col-3"></app-advert>
+  </div>
+  <div class="row" style="margin-bottom: 24px">
+    <app-advert-min *ngFor="let item of items; let i = index" class="col-3"></app-advert-min>
+  </div>
+</div>

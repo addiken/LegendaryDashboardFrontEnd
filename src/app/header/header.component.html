@@ -1,0 +1,21 @@
+<nav class="container">
+  <img src="assets/logo.svg" alt="logo">
+  <div class="head">
+    <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+      <select formControlName="category">
+        <option>бытовая техника</option>
+        <option>автомобили</option>
+        <option>бытовая техника</option>
+        <option>автомобили</option>
+      </select>
+      <input type="text" name="searchRequest" formControlName="searchRequest" placeholder="введите запрос"/>
+      <button type="submit"><img src="assets/search.svg"></button>
+    </form>
+    <button>Подать объявление</button>
+    <div class="personal">
+      <a routerLink=""><img src="assets/bx-heart.svg.svg"></a>
+      <a><img src="assets/bx-user-circle.svg.svg"></a>
+      <a>Личный кабинет</a>
+    </div>
+  </div>
+</nav>

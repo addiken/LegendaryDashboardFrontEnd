@@ -1,1 +1,194 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+h1, h2, h3, h4, h5{
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+h1{
+  font-size: 32px;
+  line-height: 39px;
+}
+h2{
+  font-size: 24px;
+  line-height: 29px;
+}
+h3{
+  font-size: 19px;
+  line-height: 23px;
+}
+h4{
+  font-size: 16px;
+  line-height: 20px;
+}
+h5{
+  font-size: 13px;
+  line-height: 16px;
+}
+input[type=text], select{
+  background: #FFFFFF;
+  border: 2px solid #8BA8AE;
+  border-radius: 9px;
+  padding: 12px 18px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: lowercase;
+  color: #8BA8AE;
+  outline:none;
+}
+input[type=text]{
+  width: 280px;
+  height: 16px;
+}
+input:hover{
+  border: 2px solid #77949A;
+  box-shadow: 0 4px 18px rgba(119, 148, 154, 0.4);
+  color: #77949A;
+}
+input:focus{
+  border: 2px solid #77949A;
+  box-shadow: 0 4px 18px rgba(119, 148, 154, 0.4);
+  color: #77949A;
+}
+select{
+  height: 44px;
+}
+select:hover{
+  border: 2px solid #77949A;
+  box-shadow: 0 4px 18px rgba(119, 148, 154, 0.4);
+  color: #77949A;
+}
+select:focus{
+  border: 2px solid #77949A;
+  box-shadow: 0 4px 18px rgba(119, 148, 154, 0.4);
+  color: #77949A;
+}
+
+button{
+  padding: 12px 28px;
+  height: 44px;
+  background: #249BB3;
+  border-radius: 9px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+button:hover{
+  box-shadow: 0 4px 18px rgba(36, 155, 179, 0.4);
+}
+button:active{
+  background: #14738A;
+  box-shadow: 0 4px 18px rgba(36, 155, 179, 0.4);
+}
+button:disabled{
+  opacity: 0.4;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #8BA8AE;
+  border-radius: 6px;
+  margin-right: 0.5em;
+  background: white;
+}
+.custom-checkbox:checked+label::before {
+  background-image: url(assets/Rectangle2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.label-checkbox{
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #8BA8AE;
+}
+
+.form_radio {
+  margin-bottom: 10px;
+}
+.form_radio input[type=radio] {
+  display: none;
+}
+.form_radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.form_radio label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url(assets/radio1.svg) 0 0 no-repeat;
+}
+
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+  background: url(assets/radio2.svg) 0 0 no-repeat;
+}
+
+/* Hover */
+.form_radio label:hover:before {
+  filter: brightness(120%);
+}
+
+/* Disabled */
+.form_radio input[type=radio]:disabled + label:before {
+  filter: grayscale(100%);
+}
+.label-radio{
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #8BA8AE;
+}
+p{
+  margin: 0;
+}
+body{
+  margin: 0;
+  background: #FAFAFA;
+  font-family: Montserrat, sans-serif;
+}

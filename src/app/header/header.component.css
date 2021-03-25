@@ -1,0 +1,49 @@
+nav{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 17px;
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 16px;
+}
+form{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+input[type=text]{
+  width: 424px;
+}
+input{
+  height: 44px;
+}
+select{
+  width: 216px;
+}
+form button{
+  padding: 12px;
+}
+.personal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+a{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
+}

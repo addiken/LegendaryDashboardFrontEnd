@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Регистрация</h1>
+  <form [formGroup]="regForm" (ngSubmit)="onSubmit()" class="col-3">
+    <input formControlName="firstName" type="text" placeholder="имя">
+    <input formControlName="lastName" type="text" placeholder="фамилия">
+    <input formControlName="secondName" type="text" placeholder="отчество">
+    <div class="phone"><p>+7</p><input formControlName="phone" type="text" placeholder="(___)___-__-__"></div>
+    <input formControlName="email" type="email" placeholder="email">
+    <input formControlName="password" type="password" placeholder="password">
+    <button type="submit">Зарегистрироваться</button>
+  </form>
+  <a routerLink="/login">Есть аккаунт? Войти</a>
+</div>

@@ -1,8 +1,9 @@
 <nav class="container">
-  <img src="assets/logo.svg" alt="logo">
+  <a routerLink="/"><img src="assets/logo.svg" alt="logo"></a>
   <div class="head">
     <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
       <select formControlName="category">
+        <option selected disabled hidden>категория</option>
         <option>бытовая техника</option>
         <option>автомобили</option>
         <option>бытовая техника</option>
@@ -14,8 +15,8 @@
     <button>Подать объявление</button>
     <div class="personal">
       <a routerLink=""><img src="assets/bx-heart.svg.svg"></a>
-      <a><img src="assets/bx-user-circle.svg.svg"></a>
-      <a>Личный кабинет</a>
+      <a routerLink="login"><img src="assets/bx-user-circle.svg.svg"></a>
+      <a routerLink="login">Личный кабинет</a>
     </div>
   </div>
 </nav>

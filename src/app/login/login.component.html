@@ -3,7 +3,7 @@
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="col-3">
     <input formControlName="email" type="email">
     <input formControlName="password" type="password">
-    <button type="submit">Войти</button>
+    <button class="primary" type="submit">Войти</button>
   </form>
   <a routerLink="/register">Нет аккаунта? Зарегистрироваться</a>
 </div>

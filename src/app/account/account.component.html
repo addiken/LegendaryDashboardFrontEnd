@@ -20,7 +20,7 @@
       <td>27 марта 2021 года</td>
     </tr>
   </table>
-  <button class="secondary">Редактировать профиль</button>
+  <button class="secondary" routerLink="/user-update">Редактировать профиль</button>
 </div>
 
 <div class="container">
@@ -28,6 +28,6 @@
 </div>
 <div class="container">
   <div class="row" style="margin-bottom: 24px">
-    <app-advert *ngFor="let item of items; let i = index" class="col-3"></app-advert>
+    <app-advert-owner *ngFor="let item of items; let i = index" class="col-3"></app-advert-owner>
   </div>
 </div>

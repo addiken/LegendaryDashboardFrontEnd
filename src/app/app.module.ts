@@ -12,12 +12,19 @@ import { CategoriesComponent } from './categories/categories.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AccountComponent } from './account/account.component';
+import { AdvertCreateComponent } from './advert-create/advert-create.component';
+import { AdvertUpdateComponent } from './advert-update/advert-update.component';
+import { AdvertOwnerComponent } from './advert-owner/advert-owner.component';
+import { UserUpdateComponent } from './user-update/user-update.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent},
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
-  { path: 'account', component: AccountComponent}
+  { path: 'account', component: AccountComponent},
+  { path: 'advert-create', component: AdvertCreateComponent},
+  { path: 'advert-update', component: AdvertUpdateComponent},
+  { path: 'user-update', component: UserUpdateComponent}
   /*{ path: '**', component:  }*/
 ];
 
@@ -31,7 +38,11 @@ const appRoutes: Routes = [
     CategoriesComponent,
     LoginComponent,
     RegisterComponent,
-    AccountComponent
+    AccountComponent,
+    AdvertCreateComponent,
+    AdvertUpdateComponent,
+    AdvertOwnerComponent,
+    UserUpdateComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Редактирование</h1>
+  <form [formGroup]="advertUpdateForm" (ngSubmit)="onSubmit()" class="col-4">
+    <h2>Категория</h2>
+    <select formControlName="category">
+      <option selected disabled hidden>категория</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+    <h2>Основная информация</h2>
+    <input formControlName="name" type="text" placeholder="название">
+    <textarea formControlName="desc" placeholder="описание"></textarea>
+    <div class="price">
+      <input formControlName="price" type="text" placeholder="цена">
+      <p>₽</p>
+    </div>
+    <h2>Адрес</h2>
+    <input formControlName="state" type="text" placeholder="регион">
+    <input formControlName="city" type="text" placeholder="город">
+    <input formControlName="street" type="text" placeholder="улица">
+    <input formControlName="house" type="text" placeholder="дом">
+    <button class="primary" type="submit">сохранить измененния</button>
+  </form>
+</div>

@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  margin-bottom: 100px;
 }
 form{
   display: flex;
@@ -14,7 +15,7 @@ input{
   width: auto;
   height: 44px;
 }
-.phone{
+.phone, .price{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,4 +29,14 @@ input{
 }
 .phone input{
   width: 298.609px;
+}
+.price p{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0;
+  padding-left: 10px;
+  color: #77949A;
+}
+.price input{
+  width: 220px;
 }

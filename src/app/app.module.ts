@@ -16,12 +16,14 @@ import { AdvertCreateComponent } from './advert-create/advert-create.component';
 import { AdvertUpdateComponent } from './advert-update/advert-update.component';
 import { AdvertOwnerComponent } from './advert-owner/advert-owner.component';
 import { UserUpdateComponent } from './user-update/user-update.component';
+import { AdvertOpenedComponent } from './advert-opened/advert-opened.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent},
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
   { path: 'account', component: AccountComponent},
+  { path: 'advert', component: AdvertOpenedComponent},
   { path: 'advert-create', component: AdvertCreateComponent},
   { path: 'advert-update', component: AdvertUpdateComponent},
   { path: 'user-update', component: UserUpdateComponent}
@@ -42,7 +44,8 @@ const appRoutes: Routes = [
     AdvertCreateComponent,
     AdvertUpdateComponent,
     AdvertOwnerComponent,
-    UserUpdateComponent
+    UserUpdateComponent,
+    AdvertOpenedComponent
   ],
   imports: [
     BrowserModule,

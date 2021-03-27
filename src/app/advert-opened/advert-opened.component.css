@@ -1,0 +1,64 @@
+.container{
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+img{
+  border-radius: 10px;
+}
+.advert-img{
+  width: 648px;
+  height: calc(648px /4 *3);
+  margin-bottom: 24px;
+}
+.col-2{
+  padding-right: 24px;
+}
+
+.advert{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#name{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #303030;
+}
+#price{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #29CC7B;
+}
+#creationDate{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #303030;
+}
+.desc{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.header{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #303030;
+}
+.description{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 145%;
+  color: #303030;
+}
+button{
+  width: 231px;
+}

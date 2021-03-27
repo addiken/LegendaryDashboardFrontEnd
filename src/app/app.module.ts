@@ -11,11 +11,13 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { CategoriesComponent } from './categories/categories.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { AccountComponent } from './account/account.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'register', component: RegisterComponent}
+  { path: 'register', component: RegisterComponent},
+  { path: 'account', component: AccountComponent}
   /*{ path: '**', component:  }*/
 ];
 
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     MainComponent,
     CategoriesComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,

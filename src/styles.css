@@ -73,9 +73,7 @@ select:focus{
 }
 
 button{
-  padding: 12px 28px;
   height: 44px;
-  background: #249BB3;
   border-radius: 9px;
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -85,9 +83,24 @@ button{
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  outline: none;
+}
+.primary{
+  background: #249BB3;
   color: #FFFFFF;
   border: none;
-  outline: none;
+  padding: 12px 28px;
+}
+.secondary{
+  background: none;
+  color: #249BB3;
+  border: 2.5px solid #249BB3;
+  padding: 9.5px 25.5px;
+}
+.secondary:active{
+  background: none;
+  border: 2.5px solid #14738A;
+  color: #14738A;
 }
 button:hover{
   box-shadow: 0 4px 18px rgba(36, 155, 179, 0.4);
@@ -195,4 +208,7 @@ body{
   margin: 0;
   background: #FAFAFA;
   font-family: Montserrat, sans-serif;
+}
+.container{
+  padding: 0;
 }

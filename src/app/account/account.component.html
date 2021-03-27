@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>Алексей</h1>
+</div>
+<div class="container">
+  <table>
+    <tr>
+      <td>Email</td>
+      <td><a href="mailto:addikenx@gmail.com">addikenx@gmail.com</a></td>
+    </tr>
+    <tr>
+      <td>Телефон</td>
+      <td><a href="tel:+79788618697">+7 (978) 861-86-97</a></td>
+    </tr>
+    <tr>
+      <td>ФИО</td>
+      <td>Балашов Алексей Александрович</td>
+    </tr>
+    <tr>
+      <td>На LD c </td>
+      <td>27 марта 2021 года</td>
+    </tr>
+  </table>
+  <button class="secondary">Редактировать профиль</button>
+</div>
+
+<div class="container">
+  <h2>Мои объявления</h2>
+</div>
+<div class="container">
+  <div class="row" style="margin-bottom: 24px">
+    <app-advert *ngFor="let item of items; let i = index" class="col-3"></app-advert>
+  </div>
+</div>
